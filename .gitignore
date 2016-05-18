@@ -9,6 +9,7 @@ debian/*.debhelper
 debian/*.substvars
 debian/debhelper-build-stamp
 debian/coreroller
+debian/coreroller-frontend
 gopath
 src
 .coreroller.cloned
