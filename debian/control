@@ -9,7 +9,7 @@ Package: coreroller
 Priority: extra
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: a set of tools to control and monitor the rollout of your updates
+Description: Set of tools to control and monitor the rollout of your updates
  CoreRoller is a set of tools to control and monitor the rollout of your
  updates. It's aimed to be an open source alternative to CoreOS CoreUpdate.
  .

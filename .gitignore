@@ -1,0 +1,14 @@
+*.build
+*.changes
+*.deb
+*.dsc
+*.tar.xz
+debian/files
+debian/*.log
+debian/*.debhelper
+debian/*.substvars
+debian/debhelper-build-stamp
+debian/coreroller
+gopath
+src
+.coreroller.cloned
