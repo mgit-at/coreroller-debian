@@ -1,0 +1,17 @@
+[Unit]
+Description=Coreroller Backend Server
+
+[Service]
+User=coreroller
+Group=coreroller
+EnvironmentFile=/etc/default/rollerd
+ExecStart=/usr/bin/rollerd $ARGS
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=full
+ProtectHome=true
+Restart=on-failure
+RestartSec=1
+
+[Install]
+WantedBy=multi-user.target

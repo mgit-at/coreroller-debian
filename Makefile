@@ -14,15 +14,15 @@ all: build
 build: .coreroller.cloned
 	mkdir -p $(GOPATH)
 	go get -v -u github.com/constabulary/gb/...
-	git -C 	$(SRCDIR) pull
+#	git -C 	$(SRCDIR) pull
 	cd $(SRCDIR)/backend/ && $(GOPATH)/bin/gb build cmd/rollerd && $(GOPATH)/bin/gb build cmd/initdb
 	mv $(SRCDIR)/backend/bin/initdb $(SRCDIR)/backend/bin/coreroller-initdb
 	cd $(SRCDIR)/frontend && npm install && npm run build
 	find $(SRCDIR)/frontend/built -type f -exec chmod -x {} \;
 
 clean:
-	rm -rf $(SRCDIR)
-	rm -f .coreroller.cloned
+#	rm -rf $(SRCDIR)
+#	rm -f .coreroller.cloned
 
 deb:
 	eatmydata debuild -I -us -uc

@@ -1,0 +1,29 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+  configure)
+    # Add coreroller user
+    if ! getent passwd coreroller > /dev/null; then
+        adduser --quiet --system --home /var/lib/coreroller --no-create-home \
+            --group --gecos "Coreroller System User" coreroller || true
+    fi
+
+    mkdir -p /var/lib/coreroller/
+    chown -R coreroller:coreroller /var/lib/coreroller || true
+  ;;
+
+  abort-upgrade|abort-remove|abort-deconfigure)
+    :
+  ;;
+
+  *)
+    echo "postinst called with unknown argument \`$1'" >&2
+    exit 1
+  ;;
+esac
+
+#DEBHELPER#
+
+exit 0
