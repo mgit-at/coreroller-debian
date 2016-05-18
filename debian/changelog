@@ -1,4 +1,11 @@
-coreroller (0.0~git20160517-1) UNRELEASED; urgency=medium
+coreroller (0.0~git20160518-1) unstable; urgency=medium
+
+  * add dependency to postgres-contrib-9.4 (uuid-ossp extension)
+  * fixed name of default file for rollerd
+
+ -- Christian Pointner <cpointner@mgit.at>  Wed, 18 May 2016 22:27:28 +0200
+
+coreroller (0.0~git20160517-1) unstable; urgency=medium
 
   * Initial release.
 

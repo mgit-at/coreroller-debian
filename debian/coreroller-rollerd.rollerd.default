@@ -1,1 +1,2 @@
 ARGS=-http-static-dir /usr/share/coreroller/frontend/
+COREROLLER_DB_URL="host=/var/run/postgresql/"

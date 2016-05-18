@@ -5,6 +5,7 @@ Description=Coreroller Backend Server
 User=coreroller
 Group=coreroller
 EnvironmentFile=/etc/default/rollerd
+WorkingDirectory=/usr/share/coreroller
 ExecStart=/usr/bin/rollerd $ARGS
 PrivateTmp=true
 PrivateDevices=true

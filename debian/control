@@ -34,7 +34,7 @@ Description: Set of tools to control and monitor the rollout of your updates
 Package: coreroller-rollerd
 Priority: extra
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, postgresql-9.4, postgresql-contrib-9.4, postgresql-9.4-semver
 Suggests: coreroller-frontend
 Description: Set of tools to control and monitor the rollout of your updates
  CoreRoller is a set of tools to control and monitor the rollout of your

@@ -1,3 +1,3 @@
 src/backend/bin/rollerd            /usr/bin/
 src/backend/bin/coreroller-initdb  /usr/bin/
-debian/rollerd.default             /etc/default
+src/backend/src/api/db             /usr/share/coreroller/
