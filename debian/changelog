@@ -1,3 +1,10 @@
+coreroller (0.0~git20160523-1) unstable; urgency=medium
+
+  * upstream: web-ui fixes
+  * added systemd socket unit for rollerd
+
+ -- Christian Pointner <equinox@mgit.at>  Mon, 23 May 2016 09:11:31 +0200
+
 coreroller (0.0~git20160518-1) unstable; urgency=medium
 
   * add dependency to postgres-contrib-9.4 (uuid-ossp extension)

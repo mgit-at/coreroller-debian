@@ -1,0 +1,8 @@
+[Unit]
+Description=Coreroller Backend Server
+
+[Socket]
+ListenStream=127.0.0.1:8000
+
+[Install]
+WantedBy=sockets.target

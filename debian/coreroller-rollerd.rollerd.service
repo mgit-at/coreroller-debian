@@ -1,5 +1,6 @@
 [Unit]
 Description=Coreroller Backend Server
+Requires=rollerd.socket
 
 [Service]
 User=coreroller
