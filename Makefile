@@ -2,13 +2,13 @@ export GOROOT := /opt/go
 export GOPATH := $(shell pwd)/gopath
 export SRCDIR := $(shell pwd)/src
 export PATH   := $(GOROOT)/bin:$(PATH)
-#export BRANCH := master
+export BRANCH := timetac
 
 all: build
 
 .coreroller.cloned:
 	git clone https://github.com/mgit-at/coreroller $(SRCDIR)
-#	git -C $(SRCDIR) checkout -b $(BRANCH)
+	git -C $(SRCDIR) checkout -b $(BRANCH)
 	touch $@
 
 build: .coreroller.cloned
@@ -23,6 +23,11 @@ build: .coreroller.cloned
 clean:
 #	rm -rf $(SRCDIR)
 #	rm -f .coreroller.cloned
+
+build-dep:
+	apt-get update
+	apt-get upgrade
+	apt-get install eatmydata debhelper dh-systemd git nodejs-legacy npm
 
 deb:
 	eatmydata debuild -I -us -uc
