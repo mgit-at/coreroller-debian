@@ -1,3 +1,9 @@
+coreroller (0.0~git20160601-2) unstable; urgency=medium
+
+  * fixed url rewriting for offline sync
+
+ -- Christian Pointner <cpointner@mgit.at>  Wed, 01 Jun 2016 10:48:18 +0200
+
 coreroller (0.0~git20160601-1) unstable; urgency=medium
 
   * added offline sync support
