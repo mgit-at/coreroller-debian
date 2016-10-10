@@ -1,3 +1,15 @@
+coreroller (0.0~git20161010-1) unstable; urgency=medium
+
+  * upgraded coreroller
+
+ -- Christian Pointner <cpointner@mgit.at>  Mon, 10 Oct 2016 15:09:32 +0200
+
+coreroller (0.0~git20160810-1) unstable; urgency=medium
+
+  * upgraded to newer coreroller
+
+ -- Christian Pointner <cpointner@mgit.at>  Wed, 10 Aug 2016 14:36:12 +0200
+
 coreroller (0.0~git20160601-2) unstable; urgency=medium
 
   * fixed url rewriting for offline sync

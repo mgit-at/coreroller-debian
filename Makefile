@@ -2,7 +2,7 @@ export GOROOT := /opt/go
 export GOPATH := $(shell pwd)/gopath
 export SRCDIR := $(shell pwd)/src
 export PATH   := $(GOROOT)/bin:$(PATH)
-export BRANCH := offline-sync
+export BRANCH := syncer-offline
 
 all: build
 
