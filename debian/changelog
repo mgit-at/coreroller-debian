@@ -1,3 +1,10 @@
+coreroller (1.0.5-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Drop dependency for postgresql-semver extension
+
+ -- Christian Pointner <cpointner@mgit.at>  Tue, 05 Sep 2017 15:30:23 +0200
+
 coreroller (0.0~git20161011-1) unstable; urgency=medium
 
   * fixed build error in frontend
