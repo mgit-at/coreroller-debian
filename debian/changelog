@@ -1,3 +1,9 @@
+coreroller (0.0~git20161011-1) unstable; urgency=medium
+
+  * fixed build error in frontend
+
+ -- Christian Pointner <cpointner@mgit.at>  Tue, 11 Oct 2016 11:25:16 +0200
+
 coreroller (0.0~git20161010-1) unstable; urgency=medium
 
   * upgraded coreroller
